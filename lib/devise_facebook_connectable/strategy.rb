@@ -44,10 +44,10 @@ module Devise #:nodoc:
                   user.on_after_facebook_connect(facebook_session)
                   success!(user)
                 rescue
-                  fail!(:facebook_invalid)
+                  # fail!(:facebook_invalid)
                 end
               else
-                fail!(:facebook_invalid)
+                # fail!(:facebook_invalid)
               end
             end
           # NOTE: Facebooker::Session::SessionExpired errors handled in the controller.
